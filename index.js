@@ -1,7 +1,7 @@
 document.getElementById("login-btn").addEventListener("click", function () {
     document.getElementById("heading").style.display = "none";
     document.getElementById("transaction-area").style.display = "block";
-})
+});
 document.getElementById("deposit-btn").addEventListener("click", function () {
     const depositAmount = document.getElementById("deposit-amount");
     const depositInput = document.getElementById("deposit-input");
@@ -14,7 +14,7 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
     balanceAmount.innerText = balanceAmountNum + depositInputNum;
 
     depositInput.value = "";
-})
+});
 document.getElementById("withdraw-btn").addEventListener("click", function () {
     const withdrawAmount = document.getElementById("withdraw-amount");
     const withdrawInput = document.getElementById("withdraw-input");
@@ -27,4 +27,4 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
     balanceAmount.innerText = balanceAmountNum - withdrawInputNum;
 
     withdrawInput.value = "";
-})
+});
